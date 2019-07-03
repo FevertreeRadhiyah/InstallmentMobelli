@@ -91,7 +91,7 @@ function func_option_valgt() {
    		 });
 
    
-	    xhr.open("POST","https://cors-anywhere.herokuapp.com/https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/" +vprice);
+	    xhr.open("POST","https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/" +vprice);
 	    xhr.setRequestHeader("Content-Type", "application/json");
 	    xhr.setRequestHeader("Cache-Control", "no-cache");
 	    xhr.setRequestHeader("dataType", "jsonp");
@@ -131,7 +131,7 @@ function returnSinglePrice()
 	$sale_price = get_post_meta( get_the_ID(), '_price', true);
 
 				$finalTotal = get_post_meta( get_the_ID(), '_regular_price', true);
-				$url 			= "https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/$finalTotal"; // json source
+				$url 			= "https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/$finalTotal"; // json source
 				$cache 			= __DIR__."/json.cache.txt"; // make this file in same dir
 		
 				$handle = fopen($cache, 'wb') or die('no fopen');	
@@ -262,7 +262,7 @@ $args = array(
         $variationsPrices = $product->get_variation_prices(); 
 
         $regularPrice = $salePrice = $price = '';
-        	$url = "https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/$priceMin"; // json source
+        	$url = "https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/$priceMin"; // json source
     $ch = curl_init($url) or die("curl issue");
 		$curl_options = array(
 			CURLOPT_RETURNTRANSFER	=> true,
@@ -286,7 +286,7 @@ $args = array(
 
 
 		  //Max Price
-		  	$url2 = "https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/$priceMax"; // json source
+		  	$url2 = "https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/$priceMax"; // json source
     $ch2 = curl_init($url2) or die("curl issue");
 		$curl_options2 = array(
 			CURLOPT_RETURNTRANSFER	=> true,
@@ -311,7 +311,7 @@ $args = array(
     else {
      		# code...
      	 	
-	$url = "https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/$finalTotal"; // json source
+	$url = "https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/$finalTotal"; // json source
     $ch = curl_init($url) or die("curl issue");
 		$curl_options = array(
 			CURLOPT_RETURNTRANSFER	=> true,
@@ -448,7 +448,7 @@ foreach ( $variations as $variation ) {
 
    
     $finalTotal = $variation_price;
-				$url 			= "https://www.ftapp.co.za/i/90129b66-ebb9-443d-b9ee-834a0c66f0ee/$finalTotal"; // json source
+				$url 			= "https://www.ftapp.co.za/i/38fe2149-2afa-4111-bbc2-8a3612afd9e3/$finalTotal"; // json source
 				$cache2 			= __DIR__."/json.cache.txt"; // make this file in same dir
 		
 				$handle2 = fopen($cache2, 'wb') or die('no fopen');	
