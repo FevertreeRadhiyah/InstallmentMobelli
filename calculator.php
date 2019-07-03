@@ -184,9 +184,9 @@ text-decoration: none;
  </style>
 
  <div nowrap id="instalmentCalcOption" data-fontsize="15" data-fontweight="normal" style="margin: 5px; padding: 0px; display: inline-block; color: rgb(102, 102, 102); background: transparent; font-family: inherit; font-size: 14px; font-weight: normal;">Choose an option to see instalment /24 Months</div>
+ <a target="_blank" href="http://mobelli.co.za/" title="Apply for Mobelli Account" alt="Sign up with Mobelli" style="text-decoration:none;"> 
     <div id="instalmentCalc" data-fontsize="15" data-fontweight="normal" style="margin: 5px; padding: 0px; display: inline-block; color: rgb(102, 102, 102); background: transparent; font-family: inherit; font-size: 15px; font-weight: bold;"></div>
-     <a target="_blank" href="http://mobelli.co.za/" title="Apply for Mobelli Account" alt="Sign up with Mobelli" style="text-decoration:none;"> 
-       </a> </a>
+      </a>
 
 <div>&nbsp;</div>
 
