@@ -208,7 +208,7 @@ function BalanceCheckFunc()
     add_action( 'woocommerce_after_shop_loop_item_title', function($price) {
 							
  ?>
-	 <a title="Apply for Mobelli Account" href="http://mobelli.co.za/"><div id="instalmentCalc" style="font-size: 14px">R<?php getData()?> /month x 24</div></a>
+	 <a title="Apply for Mobelli Account" href="http://mobelli.co.za/"><div id="instalmentCalc" style="font-size: 14px">From R<?php getData()?> /month x 24</div></a>
 
 	<script>
 		/*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
@@ -371,8 +371,8 @@ function getData()
 		}
 		else if ($instalmentValue != $instalmentValueMax) {
 			# code...
-			//echo   $instalmentValue ."- R". $instalmentValueMax;
-			echo   $instalmentValue;
+			echo   $instalmentValue ."- R". $instalmentValueMax;
+			//echo   $instalmentValue;
 		}
 
 		else{
